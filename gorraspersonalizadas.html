@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudaderas Premium - XTREET</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><span>XTREET</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sudaderaspremium.html">Sudaderas</a></li>
+                <li><a href="camisasracing.html">Camisas Racing</a></li>
+                <li><a href="gorraspersonalizadas.html">Gorras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="category-header">
+        <h1 class="category-title">Gorras personalizadas</h1>
+        <p class="category-description">Descubre nuestra colección exclusiva con diseños únicos, materiales de alta calidad y estilo urbano auténtico.</p>
+    </section>
+
+    <main>
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img src="imagenes/Gorra blanca.jpg" alt="Sudadera XTREET Negra" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Gorra XTREET Blanca</h3>
+                    <p class="product-price">₡18.0000</p>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="imagenes/Gorra roja.jpg" alt="Sudadera Racing Roja" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Gorra XTREET Roja</h3>
+                    <p class="product-price">₡20.000</p>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+
+            
+            <div class="product-card">
+                <img src="imagenes/Gorra4.jpg" alt="Sudadera Urbana Gris" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Gorra XTREET Negra</h3>
+                    <p class="product-price">₡15.0000</p>
+                    <a href="#" class="btn">Comprar</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 XTREET.</p> 
+
+        <img src="imagenes/isotipo turquesa.png" width="30">
+    </footer>
+
+</body>
+</html>
+
+<style>
+        :root {
+            --primary: #9531F0;
+            --secondary: #000000;
+            --accent: #04F7E6;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+            --dark-gray: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'ITC Avant Garde Gothic Pro';
+            color: var(--dark-gray);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--secondary);
+            color: var(--light);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--light);
+        }
+
+        .logo span {
+             background: linear-gradient(45deg, var(--light), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .category-header {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+            background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+        }
+
+        .category-title {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .category-description {
+            color: var(--dark-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            background-color: #f0f0f0;
+        }
+
+        .product-info {
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            color: var(--secondary);
+        }
+
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 0.5rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+          
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: var(--secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--secondary);
+            color: var(--light);
+            margin-top: 3rem;
+        }
+
+    </style>
+

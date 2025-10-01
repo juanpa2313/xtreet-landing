@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudaderas Premium - XTREET</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><span>XTREET</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mission-vision" class="mission-vision">
+        <div class="mission-vision-container">
+            <div class="mission">
+                <h2>MISIÓN</h2>
+                <p>Inspirar y empoderar a la comunidad urbana y racing mediante diseños innovadores, auténticos y de alta calidad que reflejen actitud, pasión y estilo de vida.</p>
+            </div>
+            <div class="vision">
+                <h2>VISIÓN</h2>
+                <p>Ser la marca líder en moda urbana y racing en latinoamérica
+, reconocida por su identidad única, compromiso con la sostenibilidad y conexión con la cultura juvenil.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 XTREET.</p>
+
+        <img src="imagenes/isotipo turquesa.png" width="30">
+    </footer>
+
+</body>
+</html>
+
+<style>
+        :root {
+            --primary: #9531F0;
+            --secondary: #000000;
+            --accent: #04F7E6;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+            --dark-gray: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'ITC Avant Garde Gothic Pro';
+            color: var(--dark-gray);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--secondary);
+            color: var(--light);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--light);
+        }
+
+        .logo span {
+             background: linear-gradient(45deg, var(--light), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+.mission-vision {
+    padding: 6rem 2rem;
+    background: var(--light);
+    text-align: center;
+}
+
+.mission-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mission,
+.vision {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mission:hover,
+.vision:hover {
+    transform: translateY(-5px);
+}
+
+.mission h2,
+.vision h2 {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+    font-family: 'ITC Avant Garde Gothic Pro';
+    position: relative;
+}
+
+.mission h2::after,
+.vision h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    margin: 0.5rem auto 1rem;
+    border-radius: 2px;
+}
+
+.mission p,
+.vision p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--dark-gray);
+    font-family: 'ITC Avant Garde Gothic Pro';
+}
+    
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--secondary);
+            color: var(--light);
+            margin-top: 3rem;
+        }
+
+    </style>
